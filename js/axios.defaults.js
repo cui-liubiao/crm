@@ -1,6 +1,6 @@
 //对axios二次封装
 axios.defaults.baseURI="http://127.0.0.1:8888";
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true;//配置未true,后台请求都默认带上cookie
 //数据以表单的形式扔给服务器
 axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
 axios.defaults.transformRequest = function (data){
