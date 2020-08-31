@@ -11,7 +11,7 @@ $(function () {
         password = md5(password);
         // console.log(account,password)
         //发起ajax请求
-        let res = await axios.post("/user/login",{account,password})
+        let res = await axios.post("http://127.0.0.1:8888/user/login",{account,password})
         if(parseInt(res.code)===0){
             alert("登录成功")
             window.location.href="index.html";
