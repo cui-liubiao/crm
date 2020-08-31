@@ -1,6 +1,6 @@
 $(function () {
     $(".submit").click(async function (e) {
-        console.log("afafaaaaa")
+        e.preventDefault();
         let account = $(".userName").val().trim();
         let password = $(".userPass").val().trim();
 
